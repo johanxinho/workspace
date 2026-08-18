@@ -1,0 +1,9 @@
+:root { --ink: #18231e; --muted: #69756d; --paper: #eef2e9; --panel: #fbfcf8; --line: #d7dfd4; --deep: #25483a; --lime: #c8f269; --coral: #ee7d63; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: var(--paper); color: var(--ink); font-family: 'DM Sans', 'Segoe UI', sans-serif; }
+button { font: inherit; padding: 8px 14px; border: 1px solid var(--line); background: #f5f8f2; border-radius: 3px; cursor: pointer; color: var(--deep); margin-right: 8px; }
+button:hover { background: var(--lime); }
+.app { max-width: 620px; margin: 5vh auto; padding: 34px; background: var(--panel); border: 1px solid var(--line); box-shadow: 12px 12px 0 var(--deep); }
+.eyebrow { color: var(--coral); font: 600 11px 'DM Mono', monospace; letter-spacing: 1px; text-transform: uppercase; }.app h1 { margin: 8px 0; font-size: clamp(38px, 8vw, 64px); line-height: .95; letter-spacing: -2px; }.intro { color: var(--muted); margin: 0 0 28px; }
+section { border-top: 1px solid var(--line); padding: 18px 0; } section:first-of-type { border-top: 0; } h2 { color: var(--deep); font-size: 15px; margin: 0 0 12px; } p { color: var(--muted); } .botones-usuario { margin-bottom: 8px; }
+@media (max-width: 650px) { .app { margin: 0; min-height: 100svh; border: 0; box-shadow: none; padding: 28px 20px; } }
