@@ -108,15 +108,15 @@ Para peticiones web, CORS se expresa mediante encabezados de respuesta HTTP. El 
 
 ### Ejercicio A — Inspeccionar cookies reales
 
-**Evidencia personal pendiente de tomar en el navegador:** abre el proyecto desplegado o un sitio de prueba con cookies, abre la pestaña de cookies indicada arriba y captura la tabla. Guarda la imagen como `docs/cookies-devtools.png` e insértala aquí. Antes de compartirla, oculta valores de cookies de sesión, tokens y cualquier dato personal: el valor completo de una cookie de autenticación equivale a una credencial.
+**Captura compartida:** la imagen recibida se incluye abajo. Muestra un sitio abierto con DevTools en la pestaña **Elements**, no la vista **Application → Cookies**; por lo tanto, no permite identificar cookies, atributos ni el resultado de `document.cookie`. Para completar la evidencia solicitada, hace falta una captura nueva de la tabla de cookies. Oculta valores de sesión y tokens antes de compartirla: el valor completo de una cookie de autenticación equivale a una credencial.
 
-> Captura de DevTools: pendiente de añadir por el estudiante. No se incluyó una imagen ficticia ni una cookie ajena.
+![Captura de DevTools compartida; la pestaña visible es Elements, no Cookies](captura-devtools-compartida.png)
 
 Al observar tu captura, completa con los valores de tu sesión:
 
-- Cookie que parece de sesión (`Session` o equivalente en `Expires`): **pendiente de inspección**.
+- Cookie que parece de sesión (`Session` o equivalente en `Expires`): **no visible en la captura**.
 - Cookie con fecha de vencimiento fija: **pendiente de inspección**.
-- ¿Alguna muestra `HttpOnly`?: **pendiente de inspección**.
+- ¿Alguna muestra `HttpOnly`?: **no se puede determinar con esta captura**.
 - ¿Aparece al evaluar `document.cookie`?: comprueba el resultado en Console; una cookie `HttpOnly` no aparece. **Pega aquí el resultado real, eliminando cualquier token/valor sensible:** pendiente.
 
 ### Ejercicio B — Crear y leer cookies con JavaScript
